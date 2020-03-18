@@ -1,0 +1,8 @@
+{
+  "name": "mjml-email-template",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "mjml": "^4.3.1"
+  }
+}
