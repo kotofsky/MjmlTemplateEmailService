@@ -1,0 +1,17 @@
+﻿@model MjmlEmailTemplate.Shared.Models.Profile.ProfileRegistrationSuccessModel
+
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<mj-section padding-bottom="0px">
+    <mj-column>
+        <mj-text css-class="head-text">Здравствуйте @Model.UserName!</mj-text>
+    </mj-column>
+
+    <mj-column>
+        <mj-text>Ваша электронная почта ( @Model.EmailAddress ) была использована при регистрации в нашем продукте</mj-text>
+        <mj-text>Для завершения регистрации пройдите по <a href="@Model.ConfirmationUrl">ссылке</a></mj-text>
+        <mj-text>Если это были не вы, просьба не переходить по ссылке</mj-text>
+    </mj-column>
+</mj-section>

@@ -1,0 +1,48 @@
+﻿@model MjmlEmailTemplate.Shared.Models.NotifyBaseModel
+
+<mjml>
+    <mj-head>
+        <mj-style>
+            .head-text div {
+            color: #000000 !important;
+            font-size: 30px !important;
+            line-height: 34px !important;
+            }
+
+            b {
+            color: #000000;
+            }
+        </mj-style>
+        <mj-attributes>
+            <mj-all font-family="Arial, sans-serif"></mj-all>
+            <mj-text padding-top="0" padding-bottom="0" padding-left="15px" line-height="30px" font-weight="normal" font-size="16px" color="#5D6C74"></mj-text>
+            <mj-section padding-top="0" padding-bottom="21px" background-color="#FFFFFF"></mj-section>
+            <mj-body width="640px" background-color="#FFFFFF"></mj-body>
+            <mj-column padding-top="0" padding-bottom="0" width="590px"></mj-column>
+            <mj-divider padding-left="15px" border-width="1.3px" border-style="solid" border-color="#98A2A8"></mj-divider>
+        </mj-attributes>
+    </mj-head>
+    <mj-body>
+        <!--logo section-->
+        <mj-section padding-bottom="35px">
+            <mj-column width="50%">
+                <mj-image fluid-on-mobile="true" padding="0" src="http://191n.mj.am/img/191n/3s/x4u.png"></mj-image>
+            </mj-column>
+        </mj-section>
+        <!--body-->
+        @RenderBody()
+        <!--contacts-->
+        <mj-section>
+            <mj-column>
+                <mj-divider />
+            </mj-column>
+        </mj-section>
+        <mj-section>
+            <mj-column>
+                <mj-text color="#000000">
+                    organization@gmail.ru
+                </mj-text>
+            </mj-column>
+        </mj-section>
+    </mj-body>
+</mjml>
